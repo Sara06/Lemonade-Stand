@@ -1,0 +1,19 @@
+/* Buttons */
+$colors: primary, secondary, success, error;
+$color-map: (
+    primary: #007bff,
+    secondary: #6c757d,
+    success: #28a745,
+    error: #dc3545
+);
+
+@each $color in $colors {
+    .btn-#{$color} {
+        background-color: map-get($color-map, $color);
+        color: #fff;
+        @include border-radius(5px);
+        &:hover {
+            background-color: darken(map-get($color-map, $color), 10%);
+        }
+    }
+}

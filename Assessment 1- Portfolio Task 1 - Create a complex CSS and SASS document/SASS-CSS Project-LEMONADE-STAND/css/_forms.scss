@@ -1,0 +1,15 @@
+/* Forms */
+input {
+    padding: $spacing;
+    border: 1px solid $secondary-color;
+    &:focus {
+        border-color: $success-color;
+        @include transition(border-color);
+    }
+    &:valid {
+        border-color: $success-color;
+    }
+    &:invalid {
+        border-color: $error-color;
+    }
+}

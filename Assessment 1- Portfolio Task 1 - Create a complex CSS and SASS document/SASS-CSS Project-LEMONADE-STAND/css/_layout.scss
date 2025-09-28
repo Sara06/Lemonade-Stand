@@ -1,0 +1,6 @@
+/* Layout */
+main {
+    margin-block: $spacing *1.2;
+    padding-inline: $spacing;
+    @extend %center-content;
+}

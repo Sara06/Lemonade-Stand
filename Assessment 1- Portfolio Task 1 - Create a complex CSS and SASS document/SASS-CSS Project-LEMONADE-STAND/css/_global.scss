@@ -1,0 +1,11 @@
+/* Global Styles */
+body {
+    font-family: $font-family-base;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    margin-bottom: $spacing;
+    font-family: $font-family-base;
+}

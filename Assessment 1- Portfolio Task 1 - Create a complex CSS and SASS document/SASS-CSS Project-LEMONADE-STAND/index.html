@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="author" content="Saraladevi Arun">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemonade Stand</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico" >    
+  </head>
+  <body>
+    <header class="sticky-bg">
+      <nav>
+        <div class="nav-links">
+          <i class="fa fa-bars" onclick="toggleMenu()"></i>
+          <a href="#hero-section" class="hero-link">Lemonade Stand</a>
+
+          <div id="nav-links-sub">
+            <ul>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#our-products">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Landing Section -->
+      <div id="hero-section">
+       
+        <div class="hero-title">
+          <div class="hero-sub-container-one">
+            <span id="title-one">SQUISH</span>
+          </div>
+          <div class="hero-sub-container-two">
+            <img
+              src="images/orange-slice.png"
+              id="orange-slice-1"
+              class="rotate"
+              alt="Freshly sliced orange">
+            <img
+              src="images/orange-slice.png"
+              id="orange-slice-2"
+              class="rotate"
+              alt="Freshly sliced orange">
+            <span id="title-two">IT</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Us Section -->
+      <section id="about-us">
+        <div class="about-us-container">
+          <div class="about-us-row reveal">
+            <div class="about-us-col">
+              <h1>About Us</h1>
+              <p>
+                "Welcome to our Lemonade Stand, where zest meets refreshment! We are a newly established venture passionate about crafting the perfect glass of lemonade. Using only the freshest ingredients, we aim to quench your thirst with every sip. Whether you're strolling by on a sunny day or planning an event, we’re here to bring you a slice of citrusy happiness. Join us on our journey to spread joy, one glass at a time!"
+              </p>
+            </div>
+            <div class="about-us-col">
+              <h1>Freshly Squeezed</h1>
+              <p>
+                "Squeeze the Day with Fresh Lemonade! There’s nothing like an ice-cold glass of lemonade when summer is on its hottest day! Our lemonade is crafted from the finest, juiciest lemons, squeezed to perfection for a burst of natural goodness. Every sip delivers a refreshing blend of tartness and sweetness, perfect for quenching your thirst and brightening your day!"
+              </p>
+            </div>
+            <div class="about-us-col">
+              <h1>A Call Away</h1>
+              <p>
+                "Craving a refreshing glass of lemonade? We’re just a call away! Whether you need a quick pick-me-up or a bulk order for an event, our freshly squeezed lemonade is ready to brighten your day. Contact us anytime, and we’ll bring the zest to you!"
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Section -->
+      <section id="our-products">
+        <h2>Products</h2>
+        <div class="products-grid-wrapper reveal">
+          <div class="products-grid-container">
+            <div class="grid-item">
+              <img src="images/orange-slice.png" alt="Freshly sliced orange">
+              <p>Lemon A</p>
+            </div>
+            <div class="grid-item">
+              <img src="images/orange-slice.png" alt="Freshly sliced orange">
+              <p>Lemon B</p>
+            </div>
+            <div class="grid-item">
+              <img src="images/orange-slice.png" alt="Freshly sliced orange">
+              <p>Lemon C</p>
+            </div>
+            <div class="grid-item">
+              <img src="images/orange-slice.png" alt="Freshly sliced orange">
+              <p>Lemon D</p>
+            </div>
+            <div class="grid-item">
+              <img src="images/orange-slice.png" alt="Freshly sliced orange">
+              <p>Lemon E</p>
+            </div>
+            <div class="grid-item">
+              <img src="images/orange-slice.png" alt="Freshly sliced orange">
+              <p>Lemon F</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call To Action Section -->
+      <section id="contact">
+        <div class="contact-row reveal">
+         
+          <div class="contact-col">
+            <div class="testimonial-wrapper">
+              <p>
+                One of the best products I've had in my life. I drink, eat, sleep,
+                read and breathe lemonade!!!
+              </p>
+              <br>
+              <p><b>Saraladevi</b> - CEO, CIO, CFO, Producer, Sole Customer</p>
+            </div>
+          </div>
+          <div class="contact-col">
+            <h3>Contact Us</h3>
+            <form action="#" method="post" novalidate>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          </div>
+  
+          <div>
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required>
+          </div>
+  
+          <div>
+            <label for="phone">Phone:</label>
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                pattern="^\+?[0-9\s\-]{10,15}$"
+                title="Enter a valid 10-digit phone number"
+                required>
+          </div>
+  
+              <button type="submit">Submit</button>
+            </form>
+            <div class="social-icon-wrapper">
+              <a
+                href="https://www.instagram.com/saraladeviarun/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="images/instagram.png" alt="Instagram"
+              ></a>
+              <a href="#contact"><img src="images/facebook.png" alt="Facebook" ></a>
+              <a href="#contact"><img src="images/twitter.png" alt="Twitter" ></a>
+              <a href="#contact"><img src="images/mail.png" alt="Mail" ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer id="footer-section">
+       
+        <div class="footer-row">
+          <p>Copyright &copy; <span id="year"></span> Saraladevi Arun</p>
+          <div class="footer-nav-links">
+            <ul>
+              <li><a href="#hero-section">Lemonade Stand</a></li>
+              <li><a href="#about-us">About Us</a></li>
+              <li><a href="#our-products">Products</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

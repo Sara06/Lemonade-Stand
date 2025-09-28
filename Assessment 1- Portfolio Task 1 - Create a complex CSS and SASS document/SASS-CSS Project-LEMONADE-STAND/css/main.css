@@ -1,0 +1,673 @@
+/* General Styles */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    max-width: 100vw;
+    box-sizing: border-box;
+    background-color: orange;
+    /* to be removed after adding landing section */
+}
+
+/* adding reveal and rotation animation  */
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.rotate {
+    animation: rotation 10s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+/* Custom Scroll */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: rgb(230, 111, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(240, 240, 240);
+    border-radius: 10px;
+    width: 5px;
+    height: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #686868;
+}
+
+/* Nav Section Styles */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 500;
+}
+
+.sticky-bg {
+    width: 100%;
+    backdrop-filter: blur(20px);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 11;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e7e7e7;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    color: white;
+    font-weight: 500;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.nav-links ul li a:hover {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+nav .fa {
+    display: none;
+}
+
+/* Landing Section Styles */
+
+#hero-section {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: #fc8a05;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-title {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clear: both;
+}
+
+#title-one {
+    font-size: 200px;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 30px;
+    margin-right: -30px;
+    position: relative;
+    transition: 0.7s;
+    z-index: 15;
+    width: 100%;
+}
+
+#title-two {
+    font-size: 200px;
+    font-family: "Londrina Outline", cursive;
+    color: white;
+    position: relative;
+    transition: 0.7s;
+    z-index: 15;
+    clip: rect(10px, 10px, 10px, 10px);
+}
+
+.hero-sub-container-one {
+    background-color: transparent;
+}
+
+.hero-sub-container-two {
+    display: flex;
+    flex: row;
+    align-items: center;
+}
+
+#orange-slice-1 {
+    position: absolute;
+    width: 300px;
+    bottom: 15%;
+    z-index: 20;
+}
+
+#orange-slice-2 {
+    z-index: 11;
+    transition: 0.03s;
+}
+
+
+
+
+/* About Us Section styles */
+
+#about-us {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: #000000;
+    min-height: 100vh;
+    background-image: url(images/backdrop.png);
+    background-position: center;
+    background-size: cover;
+    display: block;
+}
+
+#about-us p {
+    color: white;
+    cursor: ne-resize;
+}
+
+p:first-line {
+    font-size: medium;
+    color: #ff0000;
+}
+
+p:first-letter {
+    font-size: x-large;
+    font-weight: bold;
+    color: #2711cc;
+}
+
+.about-us-container {
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: wait;
+}
+
+.about-us-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-us-col {
+    padding: 10px;
+    flex-basis: 31%;
+}
+
+.about-us-col h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* Product Section Styles */
+
+#our-products {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: #fc8a05;
+    margin: auto;
+    text-align: center;
+}
+
+.products-grid-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0px;
+}
+
+.grid-item {
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.grid-item:hover {
+    transform: translateY(-20px);
+}
+
+.grid-item img {
+    width: 50%;
+    transition: 1s;
+}
+
+.grid-item:hover img {
+    animation: rotation 10s infinite linear;
+}
+
+.grid-item img:hover {
+    cursor: pointer;
+}
+
+.grid-item p {
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+/* Call To Action Section -Contact Section */
+
+#contact {
+    height: 100vh;
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: #000000;
+    color: white;
+}
+
+.contact-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.contact-col {
+    flex-basis: 30%;
+}
+
+.testimonial-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.social-icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social-icon-wrapper img {
+    transition: 0.5s;
+}
+
+.social-icon-wrapper img:hover {
+    transform: translateY(-20px);
+}
+
+
+/*Footer Section */
+#footer-section {
+    color: white;
+    width: 100%;
+    margin: auto;
+    background-color: #fc8a05;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-row {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fc8a05;
+}
+
+.footer-nav-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0%;
+}
+
+.footer-nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.footer-nav-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Adding css from revisited pdf*/
+
+@font-face {
+    font-family: ‘CoolFont’;
+    font-style: normal;
+    src: url(fonts/CoolFontStd.ttf);
+}
+
+@font-face {
+    font-family: ‘CoolFont’;
+    font-style: italic;
+    font-style: italic;
+    src: url(forit8/CoolFontItalic.ttf);
+}
+
+.whichFont {
+    font-family: ‘CoolFont’;
+}
+
+
+@font-face {
+    font-family: ‘fontName’;
+    src: source;
+    font-weight: weight;
+    font-style: style;
+}
+
+
+p>span {
+    float: right;
+    overflow: hidden;
+}
+
+::-moz-selection {
+    background: #484848;
+    color: #fff;
+}
+
+a[href^=http]:after {
+    content: " (" attr(href) ")";
+}
+
+/*Adding  10 new CSS3 selectors which were introduced in the last 12 months.*/
+
+/* 1. `:has()` - Style parent elements based on child existence */
+section:has(.hero-title) {
+    background-color: #fffae3;
+    padding: 20px;
+}
+
+/* 2. `:is()` - Reduce repetition in selector definitions */
+:is(h1, h2, h3) {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+/* 3. `:where()` - Zero specificity for flexible styling */
+:where(nav, footer) {
+    background-color: #ffcc00;
+    padding: 15px;
+}
+
+/* 4. `:focus-visible` - Style buttons when keyboard-focused */
+button:focus-visible {
+    outline: 3px solid #ff4500;
+}
+
+/* 5. `:scope` - Apply styles to the current scoped section */
+section:scope {
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 6. `:nth-child(odd of .grid-item)` - Style odd-numbered product grid items */
+.grid-item:nth-child(odd of .grid-item) {
+    background-color: #ffeeba;
+    border-radius: 10px;
+}
+
+/* 7. `:nth-of-type(2)` - Style second product differently */
+.grid-item:nth-of-type(2) {
+    border: 3px solid #ff6347;
+}
+
+/* 8. `:only-of-type` - Style paragraphs that are the only one in their container */
+p:only-of-type {
+    font-style: italic;
+}
+
+/* 9. `:empty` - Hide empty divs */
+div:empty {
+    display: none;
+}
+
+/* 10. `:not()` with multiple classes - Style items that don't have specific classes */
+.grid-item:not(.highlight, .featured) {
+    opacity: 0.7;
+}
+
+
+
+/* Adding Responsivess to Nav Section */
+
+@media (max-width: 700px) {
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+
+    }
+
+    .sticky-bg {
+        backdrop-filter: none;
+    }
+
+    .nav-links .hero-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-links ul li {
+        display: block;
+        text-align: left;
+        padding: 5px 50px;
+    }
+
+    #nav-links-sub {
+        left: -200px;
+        text-align: right;
+        margin-top: 70px;
+        position: absolute;
+        height: 100vh;
+        width: 30%;
+        background: rgba(255, 81, 0, 0);
+        backdrop-filter: blur(3px);
+        transition: 1s;
+    }
+}
+
+
+
+
+
+
+/* Addinng Landing Section -Home Responsiveness */
+
+@media (min-width: 1100px) and (max-width: 1200px) {
+    #orange-slice-2 {
+        width: 450px;
+    }
+
+    #title-one {
+        font-size: 72px;
+    }
+
+    #title-two {
+        font-size: 72px;
+    }
+}
+
+@media only screen and (min-width: 920px) and (max-width: 1100px) {
+    #orange-slice-1 {
+        width: 150px;
+        bottom: 34%;
+    }
+
+    #orange-slice-2 {
+        width: 250px;
+    }
+
+    #title-one {
+        font-size: 48px;
+    }
+
+    #title-two {
+        font-size: 48px;
+    }
+}
+
+@media (max-device-width: 920px) {
+    #orange-slice-1 {
+        display: none;
+    }
+
+    #orange-slice-2 {
+        display: none;
+    }
+
+    #title-one {
+        font-size: 40px;
+        margin-right: 2px;
+    }
+
+    #title-two {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    #orange-slice-1 {
+        display: none;
+    }
+
+    #orange-slice-2 {
+        display: none;
+    }
+
+    #title-one {
+        font-size: 24px;
+        margin-right: 2px;
+    }
+
+    #title-two {
+        font-size: 24px;
+    }
+}
+
+/* Adding responsiveness to About Us Section */
+
+@media (max-width: 700px) {
+    #about-us {
+        padding: 10%;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    .about-us-row {
+        flex-direction: column;
+    }
+}
+
+/* Adding Responsiveness  to product Section */
+
+@media (max-width: 700px) {
+    .products-grid-wrapper {
+        padding: 10% 0;
+    }
+
+    .products-grid-container {
+        grid-template-columns: auto;
+    }
+
+    .grid-item img {
+        max-width: 20%;
+        transition: 1s;
+    }
+}
+
+/* Adding Responsiveness to Contact Section */
+
+@media (max-width: 700px) {
+    .contact-row {
+        flex-direction: column;
+        padding: 20%;
+    }
+
+    .contact-col {
+        flex-basis: 40%;
+    }
+
+    .social-icon-wrapper {
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .social-icon-wrapper img {
+        width: 70%;
+    }
+}
+
+/* Adding  Footer Responsiveness */
+
+@media (max-width: 700px) {
+    #footer-section {
+        display: none;
+    }
+}
